@@ -10,3 +10,4 @@ The project history of changes.
 - Detail the project in the `README.md`
   - Create `API.md` documentation
   - Add Legal notice
+- Base project file structure and content
