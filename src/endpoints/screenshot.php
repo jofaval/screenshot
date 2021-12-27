@@ -85,6 +85,11 @@ function process_screenshot(
             $img = imgToBase64($img_path);
             break;
     }
+
+    // Delete the screenshot after it gets displayed to the user
+    unlink($img_path);
+
+    // TODO: implement a global delete for the folder, just in case
 }
 
 /**

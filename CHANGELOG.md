@@ -17,6 +17,7 @@ The project history of changes.
 - Implement debugging and logging systems
 - Create screenshot basic script call
 - Implement return format
+- Delete screenshot after display
 
 ### Fixed
 - Screenshot script failing because of incorrect route remapping
