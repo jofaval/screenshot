@@ -3,3 +3,10 @@ ci/*.py
 ci/*.bat
 ci/**/*
 
+# Logs
+logs/*
+
+# Local files
+todo
+src/driver/*
+screenshots/*

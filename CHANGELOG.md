@@ -12,3 +12,4 @@ The project history of changes.
   - Add Legal notice
 - Base project file structure and content
 - Create base wiki pages
+- Implement basic screenshotting scipt, functional. First with chrome
