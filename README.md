@@ -2,7 +2,7 @@
 A project with the idea to provide a basic API for screenshotting pages dinamically.
 
 ## Description
-As aforementioned it will try to provide a very basic API to get the page in an img format, it won't work with CAPTCHA nor login forms, not at least on the first versioning.
+As aforementioned it will try to provide a very basic API to get the page in an img format, it won't work with `CAPTCHA` nor `login forms`, not at least on the first versioning.
 
 It's a `self-hosted` solution, while I do host it on my own server, and it could be used as some sort of PoC, the idea behind is to provide a self-hosted solution, not to offer my domain as the way-to-go.
 
