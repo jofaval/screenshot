@@ -41,7 +41,7 @@ Instead of specifying an array of possible devices, regsitering them, choose you
 
 Specified in `px`, maybe in a future implementation it can have a units system.
 
-`{API_BASE_URL}/?url={$site}&width={$width}=height{$height}`
+`{API_BASE_URL}/?url={$site}&width={$width}&height={$height}`
 
 #### Get a screenshot on a browser
 Different browsers bring different results. So at least for now it may just work with Chromium and/or Firefox.
