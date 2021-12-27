@@ -12,7 +12,7 @@ function command(string $script): string
     $response = system($script, $result);
 
     // Log the command executed
-    logging(join(" ", [ $script, $result, $response ]));
+    // logging(join(" ", [ $script, $result, $response ]));
 
     return $response;
 }
