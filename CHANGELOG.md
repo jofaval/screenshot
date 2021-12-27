@@ -11,3 +11,4 @@ The project history of changes.
   - Create `API.md` documentation
   - Add Legal notice
 - Base project file structure and content
+- Create base wiki pages
