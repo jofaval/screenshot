@@ -29,9 +29,9 @@ function get_params(): array
  * @param string $name The name of the param value
  * @param mixed $default The default value, empty string if none given
  * 
- * @return string
+ * @return mixed
  */
-function get_value(string $name, $default = ''): string
+function get_value(string $name, $default = '')
 {
     // Get all the params
     $params = get_params();
@@ -41,8 +41,8 @@ function get_value(string $name, $default = ''): string
     // Set the default value if not found
     else $value = $default;
 
-    // No matter where the value comes from, it gets trimmed
-    $value = trim($value);
+    // No matter where the value comes from, it gets trimmed, if it's a string
+    if (is_string($value)) $value = trim($value);
 
     return $value;
 }

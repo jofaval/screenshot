@@ -29,10 +29,10 @@ function get_screenshot_path(string $result): string
  * Process the screenshot API logic
  * 
  * @param string $url The site web location.
- * @param int $width The width of the browser agent and screenshot, by default `null`.
- * @param int $height The height of the browser agent and screenshot, by default `null`.
+ * @param int|null $width The width of the browser agent and screenshot, by default `null`.
+ * @param int|null $height The height of the browser agent and screenshot, by default `null`.
  * @param string $browser The browser to be used, by default `firefox`.
- * @param string $header The user agents header, string format, by default `null`.
+ * @param string|null $header The user agents header, string format, by default `null`.
  * @param string $format The return value format, by default `base64`.
  * 
  * @return void
@@ -41,7 +41,7 @@ function process_screenshot(
     string $url,
     int $width = null,
     int $height = null,
-    string $browser = 'firefox',
+    string $browser = BROWSER_FIREFOX,
     string $header = null,
     string $format = FORMAT_BASE64
 ): void
