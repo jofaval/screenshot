@@ -9,3 +9,4 @@ The project history of changes.
 - Create the `CHANGELOG.md`
 - Detail the project in the `README.md`
   - Create `API.md` documentation
+  - Add Legal notice
