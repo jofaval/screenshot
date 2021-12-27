@@ -14,3 +14,4 @@ The project history of changes.
 - Create base wiki pages
 - Implement basic screenshotting scipt, functional. First with chrome
 - Prepare python execution enviroment
+- Implement debugging and logging systems
