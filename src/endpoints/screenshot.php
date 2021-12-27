@@ -86,3 +86,38 @@ function process_screenshot(
             break;
     }
 }
+
+/**
+ * Implements the screenshot endpoint
+ * 
+ * @return void
+ */
+function endpoint_screenshot(): void
+{
+    $url = get_value('url');
+
+    if (!$url) {
+        echo "No \"url\" param was given.\n";
+        return;
+    } else if (!filter_var($url, FILTER_VALIDATE_URL)) {
+        echo "No valid url was given. Make sure the required HTTP protocol is there\n";
+        return;
+    }
+
+    // Get the width value
+    $width = get_value('width', null);
+
+    // Get the height value
+    $height = get_value('height', null);
+
+    // Get the browser value
+    $browser = get_value('browser', BROWSER_FIREFOX);
+
+    // Get the header value
+    $header = get_value('header', null);
+
+    // Get the format value
+    $format = get_value('format', FORMAT_BASE64);
+
+    process_screenshot($url, $width, $height, $browser, $header, $format);
+}

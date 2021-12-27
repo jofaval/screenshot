@@ -27,11 +27,11 @@ function get_params(): array
  * Get the param value
  * 
  * @param string $name The name of the param value
- * @param string $default The default value, empty string if none given
+ * @param mixed $default The default value, empty string if none given
  * 
  * @return string
  */
-function get_value(string $name, string $default = ''): string
+function get_value(string $name, $default = ''): string
 {
     // Get all the params
     $params = get_params();

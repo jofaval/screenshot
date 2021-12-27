@@ -10,18 +10,5 @@ require_once j(ENDPOINTS_DIR, 'screenshot.php');
  */
 function dispatch(): void
 {
-    $url = get_value('url');
-
-    if (!$url) {
-        echo "No \"url\" param was given.\n";
-        return;
-    } else if (!filter_var($url, FILTER_VALIDATE_URL)) {
-        echo "No valid url was given. Make sure the required HTTP protocol is there\n";
-        return;
-    }
-
-    // Get the format value
-    $format = get_value('format', FORMAT_BASE64);
-
-    process_screenshot($url, null, null, 'firefox', null, $format);
+    endpoint_screenshot();
 }

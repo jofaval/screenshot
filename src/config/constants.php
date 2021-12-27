@@ -20,3 +20,24 @@ define('FORMAT_BASE64', 'base64');
  * @var string
  */
 define('FORMAT_VISUAL', 'visual');
+
+/**
+ * The Chrome browser
+ * 
+ * @var string
+ */
+define('BROWSER_CHROME', 'chrome');
+
+/**
+ * The Chromium browser
+ * 
+ * @var string
+ */
+define('BROWSER_CHROMIUM', 'chromium');
+
+/**
+ * The Firefox browser
+ * 
+ * @var string
+ */
+define('BROWSER_FIREFOX', 'firefox');
