@@ -36,7 +36,7 @@ default_configuration = {
 # Get all the args
 args = sys.argv[1:]
 # The working dir
-basedir = os.getcwd()
+basedir = os.path.join(os.getcwd(), '..')
 # The chrome driver
 CHROME_DRIVER = os.path.join(basedir, 'src', 'driver', 'chromedriver.exe')
 
@@ -95,12 +95,17 @@ def screenshot(url: str, configuration: dict = {}) -> str:
     return target_path
 
 url = get_url()
-image = screenshot(url, {
-    'width': 360,
-    'height': 640,
-})
 
-print(f'screenshot={image}')
+# Execute the code
+try:
+    image = screenshot(url, {
+        'width': 360,
+        'height': 640,
+    })
 
-# TODO: create log of uuid and site requested
-# TODO: implement movile and desktop resolutions here, all screenshot related details goes here
+    print(f'screenshot={image}')
+except:
+    type, value, traceback = sys.exc_info()
+    print('Error opening %s: %s' % (value.filename, value.strerror))
+
+# TODO: implement mobile and desktop resolutions here, all screenshot related details goes here

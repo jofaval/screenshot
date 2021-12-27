@@ -14,6 +14,14 @@ function get_screenshot_path(string $result): string
 {
     $img = '';
 
+    // Parse the respones
+    parse_str($result, $response);
+    // If it doesn't exist return the default value
+    if (!isset($response['screenshot'])) return $img;
+
+    // Reassign the new value
+    $img = $response['screenshot'];
+
     return $img;
 }
 
