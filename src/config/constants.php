@@ -6,3 +6,17 @@
  * @var string
  */
 define('PYTHON', 'python');
+
+/**
+ * The base64 return format
+ * 
+ * @var string
+ */
+define('FORMAT_BASE64', 'base64');
+
+/**
+ * The base64 return format
+ * 
+ * @var string
+ */
+define('FORMAT_VISUAL', 'visual');

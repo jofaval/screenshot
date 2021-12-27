@@ -43,7 +43,7 @@ function process_screenshot(
     int $height = null,
     string $browser = 'firefox',
     string $header = null,
-    string $format = 'base64'
+    string $format = FORMAT_BASE64
 ): void
 {
     $configuration = json_encode([
@@ -69,12 +69,20 @@ function process_screenshot(
     // Log the request
     logging("Requested: \"$url\", answered with: \"$img_path\"");
 
-    // Parse the img content
-    $img = imgToBase64($img_path);
-
-    // Set the correct header
-    header("Content-type: image/png");
-
-    // Print it
-    echo $img;
+    // Output the value
+    switch ($format) {
+        case FORMAT_BASE64:
+            // Parse the img content
+            $img = imgToBase64($img_path);
+            break;
+        case FORMAT_VISUAL:
+            // Parse the img content
+            $img = visualizeImage($img_path);
+            break;
+        
+        default:
+            // Parse the img content
+            $img = imgToBase64($img_path);
+            break;
+    }
 }

@@ -16,6 +16,7 @@ The project history of changes.
 - Prepare python execution enviroment
 - Implement debugging and logging systems
 - Create screenshot basic script call
+- Implement return format
 
 ### Fixed
 - Screenshot script failing because of incorrect route remapping

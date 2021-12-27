@@ -20,5 +20,8 @@ function dispatch(): void
         return;
     }
 
-    process_screenshot($url);
+    // Get the format value
+    $format = get_value('format', FORMAT_BASE64);
+
+    process_screenshot($url, null, null, 'firefox', null, $format);
 }
