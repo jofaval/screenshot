@@ -1,1 +1,5 @@
+# CI folder
 ci/*.py
+ci/*.bat
+ci/**/*
+
