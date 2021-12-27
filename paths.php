@@ -36,6 +36,13 @@ define('LOG_FILE', j(LOGS_DIR, 'log.txt'));
 define('SCREENSHOT_FILE', j(SRC_DIR, 'screenshot.py'));
 
 /**
+ * The screenshots dir
+ * 
+ * @var string
+ */
+define('SCREENSHOTS_DIR', j(BASE_DIR, 'screenshots'));
+
+/**
  * The endpoints dir
  * 
  * @var string
