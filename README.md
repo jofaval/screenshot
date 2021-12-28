@@ -16,6 +16,12 @@ So by building my own system, I bring new errors and risky choices, but at least
 ## Production
 The production enviroment is currently hosted at [screenshot.jofaval.com](https://screenshot.jofaval.com).
 
+### Pre-Requirements
+- Download de [Chromium](https://chromedriver.chromium.org/downloads) and [Firefox](https://github.com/mozilla/geckodriver/releases) drivers. Avilable for free at the given links.
+- PHP 7.x.x
+- Python >= 3.4.0
+- Implementing a deployment system, seriously.
+
 ### Deploy
 There's a `ci` folder in case you want to implement your own solution (my case).
 
