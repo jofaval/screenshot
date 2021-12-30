@@ -1,6 +1,9 @@
 # CHANGELOG #
 The project history of changes.
 
+## 2021-12-30
+### Added
+- Basic SELF form interaction
 ## 2021-12-28
 ### Added
 - Add prequirements to README
