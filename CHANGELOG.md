@@ -7,6 +7,9 @@ The project history of changes.
 - Set form as main home page, creating an `api` page
 - `.php` extension is now implied
 
+### Modified
+- Added the new api route
+
 ## 2021-12-28
 ### Added
 - Add prequirements to README

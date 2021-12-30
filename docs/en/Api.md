@@ -14,7 +14,8 @@ Everything will be lowercased, just in case, to avoid any sort of problems.
 There's none, each system has it's own security, that's what will be used. Use at your own risk.
 
 ## Endpoints
-There's just one, the main at the root of the `domain`, or `APP_URL`, whatever you specified.
+There's just one, the main at the root of the `domain`, or `APP_URL`, whatever you specified.\
+`${APP_URL}/api`, i.e., `https://example.com/api`
 
 All specified methods will work, at least for now, ONLY on the HTTP `GET` method. As it's only fetching data
 
