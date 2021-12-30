@@ -8,6 +8,9 @@ The project history of changes.
 - `.php` extension is now implied
 
 ### Modified
+- Configuration values are now fully functional on screenshot
+
+### Modified
 - Added the new api route
 
 ## 2021-12-28

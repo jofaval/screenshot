@@ -27,6 +27,7 @@ def hyper_import(module: str) -> None:
 import sys, time, os, uuid
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from urllib.parse import unquote
 
 default_configuration = {
     'width': 1920,
@@ -49,6 +50,32 @@ def get_url() -> str:
     if 0 < len(args): return args[0]
 
     return 'https://spotify.com'
+
+def get_configuration() -> dict:
+    """
+    Get and parse the configuration from the args
+
+    returns dict
+    """
+
+    configuration = {}
+
+    # If found, parse it properly
+    if 1 < len(args):
+        raw_value = args[1]
+        raw_value = unquote(raw_value)
+
+        configuration = eval(raw_value)
+
+    # If width is not given but height is, fill the missing value
+    if (not 'width' in configuration) & ('height' in configuration):
+        configuration['width'] = configuration['height']
+
+    # If height is not given but width is, fill the missing value
+    if (not 'height' in configuration) & ('width' in configuration):
+        configuration['height'] = configuration['width']
+
+    return configuration
 
 def unique_id() -> str:
     """
@@ -85,8 +112,9 @@ def screenshot(url: str, configuration: dict = {}) -> str:
     browser = webdriver.Chrome(CHROME_DRIVER, options=chrome_options)
     browser.get(url)
 
-    # Set the size
-    browser.set_window_size(configuration['width'], configuration['height'])
+    # Set the size, if the dimensions are given
+    if ('width' in configuration) & ('height' in  configuration):
+        browser.set_window_size(configuration['width'], configuration['height'])
 
     # Wether it could be saved or not
     screenshot = browser.save_screenshot(target_path)
@@ -95,13 +123,11 @@ def screenshot(url: str, configuration: dict = {}) -> str:
     return target_path
 
 url = get_url()
+configuration = get_configuration()
 
 # Execute the code
 try:
-    image = screenshot(url, {
-        'width': 360,
-        'height': 640,
-    })
+    image = screenshot(url, configuration)
 
     print(f'screenshot={image}')
 except:

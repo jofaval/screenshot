@@ -58,7 +58,7 @@ function process_screenshot(
         PYTHON,
         SCREENSHOT_FILE,
         $url,
-        "\'$configuration\'"
+        urlencode($configuration)
     ]);
 
     // Executes the script
