@@ -4,6 +4,8 @@ The project history of changes.
 ## 2021-12-30
 ### Added
 - Basic SELF form interaction
+- Set form as main home page, creating an `api` page
+
 ## 2021-12-28
 ### Added
 - Add prequirements to README
