@@ -29,5 +29,9 @@ The project history of changes.
 - Implement return format
 - Delete screenshot after display
 
+### Modified
+- Secure the file delete
+- Improve the default case
+
 ### Fixed
 - Screenshot script failing because of incorrect route remapping

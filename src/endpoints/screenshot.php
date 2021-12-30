@@ -71,6 +71,7 @@ function process_screenshot(
 
     // Output the value
     switch ($format) {
+        default:
         case FORMAT_BASE64:
             // Parse the img content
             $img = imgToBase64($img_path);
@@ -79,15 +80,10 @@ function process_screenshot(
             // Parse the img content
             $img = visualizeImage($img_path);
             break;
-        
-        default:
-            // Parse the img content
-            $img = imgToBase64($img_path);
-            break;
     }
 
     // Delete the screenshot after it gets displayed to the user
-    unlink($img_path);
+    if (file_exists($img_path)) unlink($img_path);
 
     // TODO: implement a global delete for the folder, just in case
 }
