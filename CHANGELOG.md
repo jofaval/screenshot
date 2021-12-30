@@ -8,6 +8,9 @@ The project history of changes.
 - `.php` extension is now implied
 - `Legal notice` page
 
+### Fixed
+- No given value in configuration test
+
 ### Modified
 - Configuration values are now fully functional on screenshot
 

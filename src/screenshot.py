@@ -67,6 +67,9 @@ def get_configuration() -> dict:
 
         configuration = eval(raw_value)
 
+        # If the parsed value is just a list
+        if configuration == []: return {}
+
     # If width is not given but height is, fill the missing value
     if (not 'width' in configuration) & ('height' in configuration):
         configuration['width'] = configuration['height']

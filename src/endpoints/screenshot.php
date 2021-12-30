@@ -46,13 +46,23 @@ function process_screenshot(
     string $format = FORMAT_BASE64
 ): void
 {
-    $configuration = json_encode([
+    // Get all the params
+    $params = [
         'width'   => $width,
         'height'  => $height,
         'browser' => $browser,
         'header'  => $header,
         'format'  => $format,
-    ]);
+    ];
+
+    // Don't parse incorrect values
+    $params = array_filter($params, function ($value)
+    {
+        return !is_null($value) && $value;
+    });
+
+    // Parse to JSON
+    $configuration = json_encode($params);
 
     $script = join(" ", [
         PYTHON,
