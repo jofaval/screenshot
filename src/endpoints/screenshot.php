@@ -79,6 +79,10 @@ function process_screenshot(
     // Log the request
     logging("Requested: \"$url\", answered with: \"$img_path\"");
 
+    // Change the response request title
+    $filename = pathinfo($img_path, PATHINFO_BASENAME);
+    set_title($filename);
+
     // Output the value
     switch ($format) {
         default:

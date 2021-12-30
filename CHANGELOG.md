@@ -7,6 +7,7 @@ The project history of changes.
 - Set form as main home page, creating an `api` page
 - `.php` extension is now implied
 - `Legal notice` page
+- Prepare `set_title` implementation
 
 ### Modified
 - Added the new api route

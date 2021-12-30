@@ -48,4 +48,24 @@ function get_value(string $name, $default = '')
     return $value;
 }
 
+/**
+ * Changes the request response page title
+ * 
+ * @param string $title The new title
+ * 
+ * @return bool
+ */
+function set_title(string $title): bool
+{
+    $success = true;
+
+    // TODO: to implement
+    echo "<script>
+        document.title = \"" . $title . "\";
+        this.parentElement.remove();
+    </script>";
+
+    return $success;
+}
+
 // TODO: implement POST and GET data retrieve
