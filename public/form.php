@@ -23,7 +23,7 @@
 <body>
     <!-- TITLE -->
     <h1 class="h1 text-center">Take a screenshot</h1>
-    <h2 class="h4 text-center">Through this form or using the <a href="./api">API</a>.</h2>
+    <h2 class="h4 text-center">Through this form or using the <a href="./api">API</a>. Here's the <a href="https://github.com/jofaval/screenshot/wiki/Api">guide</a></h2>
 
     <div class="container-md">
         <!-- EXTRA INFORMATION -->

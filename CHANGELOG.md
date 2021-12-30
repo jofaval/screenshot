@@ -8,6 +8,9 @@ The project history of changes.
 - `.php` extension is now implied
 - `Legal notice` page
 
+### Modified
+- API headline now has a wiki link
+
 ### Fixed
 - No given value in configuration test
 
