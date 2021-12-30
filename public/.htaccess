@@ -1,0 +1,6 @@
+# Enable friendly-url
+RewriteEngine On
+
+# Imply .php extension by default
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]

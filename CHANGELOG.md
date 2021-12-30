@@ -5,6 +5,7 @@ The project history of changes.
 ### Added
 - Basic SELF form interaction
 - Set form as main home page, creating an `api` page
+- `.php` extension is now implied
 
 ## 2021-12-28
 ### Added
