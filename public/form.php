@@ -1,6 +1,6 @@
 <?php
 
-// TODO: implement form data validation
+// TODO: implement form data validation, before redirecting that is
 
 ?>
 
@@ -26,6 +26,17 @@
     <h2 class="h4 text-center">Through this form or using the <a href="./api">API</a>.</h2>
 
     <div class="container-md">
+        <!-- EXTRA INFORMATION -->
+        <p class="float-md-end text-muted">
+            Go check the API for yourself,
+            <a href="./api">here</a>.
+        </p>
+
+        <!-- LEGAL NOTICE -->
+        <p>
+            Take into account the <a href="./legal.php">legal notice</a>.
+        </p>
+
         <!-- FORM -->
         <form action="./api.php" class="form m-sm-3 p-2 p-sm-4 shadow rounded" method="get">
             <!-- SITE DETAILS -->
@@ -111,12 +122,6 @@
                 <input type="submit" name="takeScreeshot" value="Take a screenshot!" class="btn btn-outline-primary w-100">
             </div>
         </form>
-
-        <!-- EXTRA INFORMATION -->
-        <p>
-            Go check the API for yourself,
-            <a href="./api">here</a>.
-        </p>
     </div>
 
     <!-- SCRIPTS -->

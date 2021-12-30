@@ -6,6 +6,7 @@ The project history of changes.
 - Basic SELF form interaction
 - Set form as main home page, creating an `api` page
 - `.php` extension is now implied
+- `Legal notice` page
 
 ### Modified
 - Configuration values are now fully functional on screenshot
