@@ -38,8 +38,9 @@ function get_value(string $name, $default = '')
 
     // If the key exists, get it
     if (isset($params[$name])) $value = $params[$name];
-    // Set the default value if not found
-    else $value = $default;
+
+    // Set the default value if not found, or if is empty
+    if (!$value) $value = $default;
 
     // No matter where the value comes from, it gets trimmed, if it's a string
     if (is_string($value)) $value = trim($value);
