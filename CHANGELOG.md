@@ -9,16 +9,13 @@ The project history of changes.
 - `Legal notice` page
 
 ### Modified
+- Added the new api route
+- Configuration values are now fully functional on screenshot
 - API headline now has a wiki link
 
 ### Fixed
 - No given value in configuration test
-
-### Modified
-- Configuration values are now fully functional on screenshot
-
-### Modified
-- Added the new api route
+- CHANGELOG inconsistency
 
 ## 2021-12-28
 ### Added
