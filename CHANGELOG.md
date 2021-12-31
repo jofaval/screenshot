@@ -1,6 +1,10 @@
 # CHANGELOG #
 The project history of changes.
 
+## 2021-12-31
+### Added
+- Log requester's IP on screenshot request
+
 ## 2021-12-30
 ### Added
 - Basic SELF form interaction

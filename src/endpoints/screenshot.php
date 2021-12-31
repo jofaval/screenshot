@@ -76,8 +76,11 @@ function process_screenshot(
     // Parse the img path
     $img_path = get_screenshot_path($result);
 
+    // The requester IP
+    $requester_ip = $_SERVER['REMOTE_ADDR'];
+
     // Log the request
-    logging("Requested: \"$url\", answered with: \"$img_path\"");
+    logging("[$requester_ip] Requested: \"$url\", answered with: \"$img_path\"");
 
     // Change the response request title
     $filename = pathinfo($img_path, PATHINFO_BASENAME);
