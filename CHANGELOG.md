@@ -5,6 +5,9 @@ The project history of changes.
 ### Added
 - Log requester's IP on screenshot request
 
+### Modified
+- Screenshot log file is now a unique log file
+
 ## 2021-12-30
 ### Added
 - Basic SELF form interaction

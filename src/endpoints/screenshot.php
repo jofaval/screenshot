@@ -80,7 +80,8 @@ function process_screenshot(
     $requester_ip = $_SERVER['REMOTE_ADDR'];
 
     // Log the request
-    logging("[$requester_ip] Requested: \"$url\", answered with: \"$img_path\"");
+    $screenshot_log_file = j(LOGS_DIR, 'screenshots.log');
+    logging("[$requester_ip] Requested: \"$url\", answered with: \"$img_path\"", $screenshot_log_file);
 
     // Change the response request title
     $filename = pathinfo($img_path, PATHINFO_BASENAME);
