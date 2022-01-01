@@ -1,6 +1,10 @@
 # CHANGELOG #
 The project history of changes.
 
+## 2022-01-01
+### Added
+- Implemented `set_title` for files visualization
+
 ## 2021-12-31
 ### Added
 - Log requester's IP on screenshot request

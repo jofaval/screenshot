@@ -59,11 +59,7 @@ function set_title(string $title): bool
 {
     $success = true;
 
-    // TODO: to implement
-    echo "<script>
-        document.title = \"" . $title . "\";
-        this.parentElement.remove();
-    </script>";
+    header('Content-Disposition: attachment; filename="' . $title . '"');
 
     return $success;
 }
