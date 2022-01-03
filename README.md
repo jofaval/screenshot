@@ -27,6 +27,8 @@ There's a `ci` folder in case you want to implement your own solution (my case).
 
 If you have the means to actually implement a proper ci solution or use an existent one, you can ignore or use this folder at will. As it won't hold any logic.
 
+For a complete visualization of the folder structure, [click here](./docs/en/Structure.md).
+
 ## API
 There's only one endpoint, at the start of the project
 
