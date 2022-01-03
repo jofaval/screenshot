@@ -1,6 +1,10 @@
 # CHANGELOG #
 The project history of changes.
 
+## 2022-01-03
+### Modified
+- Properly implement working dir on the python script
+
 ## 2022-01-01
 ### Added
 - Implemented `set_title` for files visualization

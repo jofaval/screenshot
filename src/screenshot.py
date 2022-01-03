@@ -1,4 +1,4 @@
-from posixpath import dirname
+from posixpath import abspath, dirname
 import pip
 
 # The required modules
@@ -37,7 +37,12 @@ default_configuration = {
 # Get all the args
 args = sys.argv[1:]
 # The working dir
-basedir = os.path.join(os.getcwd(), '..')
+basedir = dirname(
+    dirname(
+        __file__
+    )
+)
+basedir = os.path.realpath(basedir)
 # The chrome driver
 CHROME_DRIVER = os.path.join(basedir, 'src', 'driver', 'chromedriver.exe')
 
