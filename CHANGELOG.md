@@ -1,7 +1,12 @@
 # CHANGELOG #
 The project history of changes.
 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
 ## 2022-01-03
+### Added
+- CHANGELOG.md standards
+
 ### Modified
 - Properly implement working dir on the python script
 
