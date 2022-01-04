@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Modified
 - Properly implement working dir on the python script
+- Update wiki pages
 
 ## 2022-01-01
 ### Added
